@@ -33,6 +33,10 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     'vendor/etc/init/android.hardware.nfc@1.2-service-moto.rc': blob_fixup()
         .regex_replace('class hal', 'override\n    class hal'),
+    'vendor/etc/libnfc-nci.conf': blob_fixup()
+        .regex_replace('NFC_DEBUG_ENABLED=0x01', 'NFC_DEBUG_ENABLED=0'),
+    'vendor/etc/libnfc-nxp.conf': blob_fixup()
+        .regex_replace('(NXPLOG_.*_LOGLEVEL)=0x03', '\\1=0x02'),
     (
         'vendor/lib64/com.qti.feature2.rt.so',
         'vendor/lib64/hw/camera.qcom.so',
