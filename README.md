@@ -1,4 +1,4 @@
-Device tree configuration for Motorola Moto G Power (2021)
+Device tree configuration for Motorola Moto G9 Power
 
 
 ```
