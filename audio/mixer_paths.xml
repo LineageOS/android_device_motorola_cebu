@@ -164,7 +164,6 @@
     <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia14" value="0" />
     <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia15" value="0" />
     <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia16" value="0" />
-    <ctl name="aw882xx_fade_dealyed_time" value="0" />
     <!-- HFP start -->
     <ctl name="HFP_SLIM7_UL_HL Switch" value="0" />
     <!-- ctl name="RX_CDC_DMA_RX_1 Port Mixer SLIM_7_TX" value="0" / -->
@@ -429,7 +428,6 @@
     <ctl name="RX INT2_1 VBAT RX AUX VBAT Enable" value="0" />
 
     <!-- Codec controls end -->
-    <ctl name="HAC Switch" value="Off" />
 
     <!-- defaults for mmap record -->
     <ctl name="MultiMedia16 Mixer TX_CDC_DMA_TX_3" value="0" />
@@ -2363,14 +2361,6 @@
         <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode1" value="1" />
     </path>
 
-    <path name="voicemmode1-call speaker-and-usb-headphones">
-        <path name="voicemmode1-call usb-headphones" />
-    </path>
-
-    <path name="voicemmode1-call speaker-and-usb-headset">
-        <path name="voicemmode1-call usb-headset" />
-    </path>
-
     <path name="voicemmode1-call headset">
         <ctl name="RX_CDC_DMA_RX_0_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_4_MMode1" value="1" />
@@ -2403,6 +2393,14 @@
     <path name="voicemmode1-call usb-headset">
         <ctl name="USB_AUDIO_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer USB_AUDIO_TX_MMode1" value="1" />
+    </path>
+
+    <path name="voicemmode1-call speaker-and-usb-headphones">
+        <path name="voicemmode1-call usb-headphones" />
+    </path>
+
+    <path name="voicemmode1-call speaker-and-usb-headset">
+        <path name="voicemmode1-call usb-headset" />
     </path>
 
     <path name="voicemmode1-call display-port-and-usb-headset-mic">
@@ -3125,10 +3123,6 @@
     </path>
 
     <path name="handset-mic">
-        <path name="amic1" />
-    </path>
-
-    <path name="handset-mic-top">
         <path name="amic3" />
     </path>
 
@@ -3188,7 +3182,6 @@
     </path>
 
     <path name="voice-hac-handset">
-        <ctl name="HAC Switch" value="On" />
         <path name="handset" />
     </path>
 
@@ -3197,12 +3190,10 @@
     </path>
 
     <path name="voice-speaker">
-        <ctl name="aw882xx_fade_dealyed_time" value="100" />
     </path>
 
     <path name="voice-speaker-stereo">
         <path name="speaker" />
-        <ctl name="aw882xx_fade_dealyed_time" value="100" />
     </path>
 
     <path name="voice-speaker-2">
@@ -3231,8 +3222,6 @@
         <ctl name="RX INT1 DEM MUX" value="CLSH_DSM_OUT" />
         <ctl name="HPHL_RDAC Switch" value="1" />
         <ctl name="HPHR_RDAC Switch" value="1" />
-        <ctl name="HPHL Volume" value="16" />
-        <ctl name="HPHR Volume" value="16" />
     </path>
 
     <path name="voice-line">
@@ -3304,7 +3293,7 @@
     </path>
 
     <path name="voice-rec-mic">
-        <path name="speaker-mic" />
+        <path name="handset-mic" />
     </path>
 
     <path name="camcorder-mic">
