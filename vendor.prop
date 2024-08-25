@@ -2,7 +2,6 @@
 persist.vendor.audio.dualmic.config=endfire
 persist.vendor.audio.fluence.voicecall=false
 persist.vendor.audio.fluence.voicecomm=true
-ro.audio.monitorRotation=true
 
 # Camera
 persist.vendor.camera.physical.num=4
@@ -13,8 +12,11 @@ ro.surface_flinger.has_wide_color_display=false
 ro.surface_flinger.set_idle_timer_ms=0
 ro.surface_flinger.set_touch_timer_ms=0
 
+# Fingerprint
+vendor.false_touch_quality=25
+
 # Keymaster
 ro.hardware.keystore_desede=true
 
 # Radio
-ro.vendor.radio.imei.sv=33
+ro.vendor.radio.imei.sv=11
