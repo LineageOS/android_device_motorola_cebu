@@ -13,12 +13,11 @@ vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
 
-# Audio Firmware
+# Audio firmware
 vendor/firmware/aw882xx_mono.bin
 vendor/firmware/aw882xx_spk_reg.bin
 
 # Camera
-vendor/lib/libcamxexternalformatutils.so
 vendor/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov02b10_eeprom.so
 vendor/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov16a1q_eeprom.so
 vendor/lib64/camera/com.mot.eeprom.mot_ov02b1b_otp.so
@@ -137,7 +136,7 @@ vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libtfestriping.so
 vendor/lib64/libvidhance.so
 
-# Camera-configs
+# Camera configs
 vendor/etc/camera/dual_golden_depth.bin
 vendor/etc/camera/vidhance_calibration
 
@@ -159,11 +158,8 @@ vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc
 vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/hw/chipone.fingerprint.default.so
 
-# Graphics firmware
+# Graphics (Adreno firmware)
 vendor/firmware/a630_sqe.fw
-vendor/firmware/a650_gmu.bin
-vendor/firmware/a650_sqe.fw
-vendor/firmware/a702_sqe.fw
 
 # NFC
 vendor/etc/init/android.hardware.nfc@1.2-service.rc:vendor/etc/init/android.hardware.nfc@1.2-service-moto.rc
@@ -171,7 +167,7 @@ vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
 vendor/lib64/libpn557_fw.so
 
-# Sensor-configs
+# Sensors configs
 vendor/etc/sensors/config/bengal_default_sensors.json
 vendor/etc/sensors/config/bengal_dynamic_sensors.json
 vendor/etc/sensors/config/bengal_icm4x6xx_0.json
