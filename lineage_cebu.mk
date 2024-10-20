@@ -19,10 +19,10 @@ PRODUCT_DEVICE := cebu
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g(9) power
 PRODUCT_MANUFACTURER := motorola
+
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
-BUILD_FINGERPRINT := "motorola/cebu_retail/cebu:11/RZCS31.Q2-57-12-14/3d8395:user/release-keys"
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_PRODUCT=cebu_retail \
-    PRIVATE_BUILD_DESC="cebu_retail-user 11 RZCS31.Q2-57-12-14 3d8395 release-keys"
+    BuildDesc="cebu_retail-user 11 RZCS31.Q2-57-12-14 3d8395 release-keys" \
+    BuildFingerprint=motorola/cebu_retail/cebu:11/RZCS31.Q2-57-12-14/3d8395:user/release-keys \
+    DeviceProduct=cebu_retail
