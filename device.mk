@@ -21,6 +21,15 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 1600
 TARGET_SCREEN_WIDTH := 720
 
+# Init
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    fstab.qcom.ramdisk \
+    init.oem.fingerprint.sh \
+    init.oem.fingerprint2.sh \
+    init.mmi.overlay.rc \
+    init.recovery.touch.rc
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.bengal
@@ -52,21 +61,13 @@ $(foreach DEVICE_SKU, $(DEVICE_NFC_SKUS), \
     $(LOCAL_PATH)/permissions/unavail.android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.nfc.xml \
     $(LOCAL_PATH)/permissions/unavail.com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/com.nxp.mifare.xml)
 
-# Rootdir
-PRODUCT_PACKAGES += \
-    fstab.qcom \
-    init.oem.fingerprint.sh \
-    init.oem.fingerprint2.sh \
-    init.mmi.overlay.rc \
-    init.recovery.touch.rc
-
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL := 29
 PRODUCT_SHIPPING_API_LEVEL := 29
 
-# Ramdisk
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom_ramdisk:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/motorola/cebu/cebu-vendor.mk)
