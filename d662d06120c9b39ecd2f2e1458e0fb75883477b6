@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5e192388_95bb24fa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27312
+      },
+      "writtenOn": "2025-04-08T20:14:09Z",
+      "side": 1,
+      "message": "Now power_profile shows the real battery of the device\nCebu has 6000mAh not 5000 mAh",
+      "revId": "d662d06120c9b39ecd2f2e1458e0fb75883477b6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
