@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "45a59e64_33f5873f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27312
+      },
+      "writtenOn": "2025-04-08T20:11:03Z",
+      "side": 1,
+      "message": "Already tested, works correctly\n* Needs the blobs from the commit above https://review.lineageos.org/c/LineageOS/android_device_motorola_cebu/+/426443",
+      "revId": "ac505db04d074389587dacd3fef4bd7a32d9b488",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
