@@ -1,4 +1,4 @@
-# All firmware images below are extracted from cebu_retail RZCS31.Q2-57-12-14
+# All firmware images below are extracted from the release mentioned in proprietary-files.txt
 
 abl.elf:abl.img;AB
 BTFM.bin:bluetooth.img;AB
