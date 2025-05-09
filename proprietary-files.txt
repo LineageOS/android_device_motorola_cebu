@@ -171,6 +171,9 @@ vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
 vendor/lib64/libpn557_fw.so
 
+# OEM
+vendor/etc/vhw.xml
+
 # Sensors configs
 vendor/etc/sensors/config/bengal_default_sensors.json
 vendor/etc/sensors/config/bengal_dynamic_sensors.json
@@ -249,3 +252,6 @@ vendor/firmware/NT36xxx_MP_Setting_Criteria_6026.csv:recovery/root/vendor/firmwa
 vendor/firmware/focaltech-dsbj-ft8006s_aa-05-0000-cebu.bin:recovery/root/vendor/firmware/focaltech_ts_fw_dsbj.bin
 vendor/firmware/novatek_ts_fw.bin:recovery/root/vendor/firmware/tm_novatek_ts_fw.bin
 vendor/firmware/novatek_ts_mp.bin:recovery/root/vendor/firmware/tm_novatek_ts_mp.bin
+
+# WiFi
+vendor/bin/cnss-daemon
