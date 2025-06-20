@@ -176,6 +176,12 @@
         <item>420</item>
     </array>
 
+    <!-- MMS user agent string -->
+    <string name="config_mms_user_agent" translatable="false">motog9power</string>
+
+    <!-- MMS user agent prolfile url -->
+    <string name="config_mms_user_agent_profile_url" translatable="false">http://uaprof.motorola.com/phoneconfig/motov1/Profile/motov1.rdf</string>
+
     <!-- Specify if the fingerprint hardware support gestures-->
     <bool name="config_fingerprintSupportsGestures">true</bool>
 
