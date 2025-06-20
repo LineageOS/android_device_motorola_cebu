@@ -40,8 +40,13 @@ PRODUCT_PACKAGES += \
 # Overlay
 PRODUCT_PACKAGES += \
     FrameworksResDevice \
+    FrameworksResDeviceXT2091-7 \
+    FrameworksResDeviceXT2091-8 \
     LineagePlatformDevice \
-    SystemUIResDevice
+    SystemUIResDevice \
+    WifiResDevice \
+    WifiResDeviceXT2091-7 \
+    WifiResDeviceXT2091-8 \
 
 # Permissions
 PRODUCT_COPY_FILES += \
