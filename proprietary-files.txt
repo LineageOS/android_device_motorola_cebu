@@ -157,6 +157,8 @@ vendor/bin/hw/fpc_ident
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-chipone2.rc
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc
 vendor/lib64/com.fingerprints.extension@1.0.so
+vendor/lib64/libfp_ext_svc2.so
+vendor/lib64/vendor.fpsensor.hardware.fpsensorhidlsvc@2.0.so
 vendor/lib64/hw/chipone.fingerprint.default.so
 vendor/usr/idc/uinput-fpc.idc
 vendor/usr/idc/uinput-fpsensor.idc
