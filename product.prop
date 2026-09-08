@@ -1,0 +1,2 @@
+# SKU specific properties
+import /product/etc/props/hardware.sku.${ro.boot.hardware.sku}.prop
