@@ -7,12 +7,12 @@ prebuilt_etc {
     name: "hardware.sku.XT2091-7.prop",
     src: "hardware.sku.XT2091-7.prop",
     sub_dir: "props",
-    soc_specific: true,
+    product_specific: true,
 }
 
 prebuilt_etc {
     name: "hardware.sku.XT2091-8.prop",
     src: "hardware.sku.XT2091-8.prop",
     sub_dir: "props",
-    soc_specific: true,
+    product_specific: true,
 }
